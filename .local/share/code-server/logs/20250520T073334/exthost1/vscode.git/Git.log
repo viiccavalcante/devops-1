@@ -1,0 +1,147 @@
+2025-05-20 07:33:39.582 [info] [main] Log level: Info
+2025-05-20 07:33:39.582 [info] [main] Validating found git in: "git"
+2025-05-20 07:33:39.582 [info] [main] Using git "2.43.0" from "git"
+2025-05-20 07:33:39.582 [info] [Model][doInitialScan] Initial repository scan started
+2025-05-20 07:33:39.582 [info] > git rev-parse --show-toplevel [4ms]
+2025-05-20 07:33:39.582 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:33:39.582 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 07:33:39.582 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:33:39.582 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-20 07:33:39.582 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:33:39.584 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-20 07:33:39.585 [info] > git rev-parse --git-dir --git-common-dir [0ms]
+2025-05-20 07:33:39.591 [info] [Model][openRepository] Opened repository: /home/laborant/.fzf
+2025-05-20 07:33:39.593 [info] > git config --get commit.template [1ms]
+2025-05-20 07:33:39.594 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-20 07:33:39.594 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:33:39.596 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-20 07:33:39.596 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:33:39.598 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 07:33:39.598 [info] > git rev-parse --show-toplevel [1ms]
+2025-05-20 07:33:39.598 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:33:39.598 [info] [Model][doInitialScan] Initial repository scan completed - repositories (1), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2025-05-20 07:33:39.599 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/laborant/.fzf/.git/refs/remotes/origin/master'
+2025-05-20 07:33:39.599 [info] > git rev-parse refs/remotes/origin/master [0ms]
+2025-05-20 07:33:39.603 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 07:33:39.608 [info] > git status -z -uall [7ms]
+2025-05-20 07:33:39.622 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 07:33:39.623 [info] > git config --get commit.template [1ms]
+2025-05-20 07:33:39.623 [info] > git config --get --local branch.master.vscode-merge-base [0ms]
+2025-05-20 07:33:39.623 [warning] [Git][config] git config failed: Failed to execute git
+2025-05-20 07:33:39.625 [info] > git reflog master --grep-reflog=branch: Created from *. [1ms]
+2025-05-20 07:33:39.626 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 07:33:39.627 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/laborant/.fzf/.git/refs/remotes/origin/master'
+2025-05-20 07:33:39.627 [info] > git symbolic-ref --short refs/remotes/origin/HEAD [1ms]
+2025-05-20 07:33:39.628 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2025-05-20 07:33:39.631 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [3ms]
+2025-05-20 07:33:39.633 [info] > git status -z -uall [4ms]
+2025-05-20 07:33:39.633 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [3ms]
+2025-05-20 07:33:39.635 [info] > git config --add --local branch.master.vscode-merge-base origin/master [3ms]
+2025-05-20 07:33:39.636 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [2ms]
+2025-05-20 07:33:39.637 [info] > git config --get commit.template [1ms]
+2025-05-20 07:33:39.638 [info] > git config --get --local branch.master.vscode-merge-base [1ms]
+2025-05-20 07:33:39.639 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/origin/master refs/remotes/origin/master [1ms]
+2025-05-20 07:33:39.640 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 07:33:39.641 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/laborant/.fzf/.git/refs/remotes/origin/master'
+2025-05-20 07:33:39.641 [info] > git merge-base refs/heads/master refs/remotes/origin/master [1ms]
+2025-05-20 07:33:39.643 [info] > git rev-parse refs/remotes/origin/master [2ms]
+2025-05-20 07:33:39.644 [info] > git diff --name-status -z --diff-filter=ADMR 4df842e78cb1b2788508cb1cc9ddd8a0f0ea58e2...refs/remotes/origin/master [2ms]
+2025-05-20 07:33:39.646 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 07:33:39.647 [info] > git status -z -uall [4ms]
+2025-05-20 07:33:40.162 [info] > git check-ignore -v -z --stdin [3ms]
+2025-05-20 07:33:40.495 [info] > git rev-parse --show-toplevel [2ms]
+2025-05-20 07:33:40.495 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:33:40.845 [info] > git config --get commit.template [6ms]
+2025-05-20 07:33:40.847 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [3ms]
+2025-05-20 07:33:40.850 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/laborant/.fzf/.git/refs/remotes/origin/master'
+2025-05-20 07:33:40.851 [info] > git rev-parse refs/remotes/origin/master [1ms]
+2025-05-20 07:33:40.858 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 07:33:40.860 [info] > git status -z -uall [7ms]
+2025-05-20 07:33:58.723 [info] > git rev-parse --show-toplevel [4ms]
+2025-05-20 07:33:58.723 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:36:35.866 [info] > git rev-parse --show-toplevel [0ms]
+2025-05-20 07:36:35.866 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:36:35.869 [info] > git log --format=%H%n%aN%n%aE%n%at%n%ct%n%P%n%D%n%B -z --shortstat --diff-merges=first-parent -n50 --skip=0 --topo-order --decorate=full --stdin [14ms]
+2025-05-20 07:36:55.362 [info] > git rev-parse --show-toplevel [0ms]
+2025-05-20 07:36:55.362 [info] fatal: not a git repository (or any of the parent directories): .git
+2025-05-20 07:37:00.890 [info] > git rev-parse --show-toplevel [3ms]
+2025-05-20 07:37:00.898 [info] > git rev-parse --git-dir --git-common-dir [2ms]
+2025-05-20 07:37:00.906 [info] [Model][openRepository] Opened repository: /home/laborant
+2025-05-20 07:37:00.911 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 07:37:00.911 [info] > git config --get commit.template [3ms]
+2025-05-20 07:37:00.911 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [0ms]
+2025-05-20 07:37:00.911 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:00.915 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 07:37:00.917 [info] > git status -z -uall [4ms]
+2025-05-20 07:37:00.944 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [13ms]
+2025-05-20 07:37:00.944 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:00.944 [error] [GitHistoryProvider][resolveHEADMergeBase] Failed to resolve merge base for main: Error: No such branch: main.
+2025-05-20 07:37:00.949 [info] > git config --get commit.template [16ms]
+2025-05-20 07:37:00.950 [info] [Git][getRemotes] No remotes found in the git config file
+2025-05-20 07:37:00.951 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-20 07:37:00.951 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:00.955 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 07:37:00.956 [info] > git status -z -uall [3ms]
+2025-05-20 07:37:01.585 [info] > git check-ignore -v -z --stdin [4ms]
+2025-05-20 07:37:07.619 [info] > git config --get commit.template [9ms]
+2025-05-20 07:37:07.621 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 07:37:07.621 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:07.626 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 07:37:07.627 [info] > git status -z -uall [4ms]
+2025-05-20 07:37:12.260 [info] > git config --get commit.template [7ms]
+2025-05-20 07:37:12.261 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [3ms]
+2025-05-20 07:37:12.261 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:12.270 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 07:37:12.272 [info] > git status -z -uall [7ms]
+2025-05-20 07:37:12.648 [info] > git config --get commit.template [7ms]
+2025-05-20 07:37:12.650 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [4ms]
+2025-05-20 07:37:12.650 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:12.665 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [4ms]
+2025-05-20 07:37:12.667 [info] > git status -z -uall [13ms]
+2025-05-20 07:37:17.689 [info] > git config --get commit.template [7ms]
+2025-05-20 07:37:17.690 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:37:17.690 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:17.699 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 07:37:17.701 [info] > git status -z -uall [8ms]
+2025-05-20 07:37:23.311 [info] > git config --get commit.template [8ms]
+2025-05-20 07:37:23.313 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+2025-05-20 07:37:23.313 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:23.323 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 07:37:23.325 [info] > git status -z -uall [8ms]
+2025-05-20 07:37:28.348 [info] > git config --get commit.template [2ms]
+2025-05-20 07:37:28.348 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [1ms]
+2025-05-20 07:37:28.348 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:28.353 [info] > git status -z -uall [4ms]
+2025-05-20 07:37:28.355 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [2ms]
+2025-05-20 07:37:32.506 [info] > git config --get commit.template [6ms]
+2025-05-20 07:37:32.506 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [0ms]
+2025-05-20 07:37:32.506 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:32.525 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [7ms]
+2025-05-20 07:37:32.536 [info] > git status -z -uall [18ms]
+2025-05-20 07:37:33.210 [info] > git show --textconv :app/main.go [4ms]
+2025-05-20 07:37:33.210 [info] > git show --textconv HEAD:app/main.go [2ms]
+2025-05-20 07:37:33.210 [info] > git ls-files --stage -- app/main.go [1ms]
+2025-05-20 07:37:33.224 [info] > git cat-file -s 06f866738fcbbf04f9d8f4dd87fae984030ea091 [2ms]
+2025-05-20 07:37:33.225 [info] > git ls-tree -l HEAD -- app/main.go [15ms]
+2025-05-20 07:37:33.225 [info] fatal: Not a valid object name HEAD
+2025-05-20 07:37:33.226 [info] > git hash-object -t tree /dev/null [2ms]
+2025-05-20 07:37:33.226 [warning] [GitFileSystemProvider][readFile] File not found - git:/home/laborant/app/main.go.git?%7B%22path%22%3A%22%2Fhome%2Flaborant%2Fapp%2Fmain.go%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-05-20 07:37:33.228 [info] > git hash-object -t tree /dev/null [2ms]
+2025-05-20 07:37:33.228 [warning] [GitFileSystemProvider][stat] File not found - git:/home/laborant/app/main.go.git?%7B%22path%22%3A%22%2Fhome%2Flaborant%2Fapp%2Fmain.go%22%2C%22ref%22%3A%22HEAD%22%7D
+2025-05-20 07:37:33.793 [info] > git ls-files --stage -- app/main.go [1ms]
+2025-05-20 07:37:33.802 [info] > git cat-file -s 06f866738fcbbf04f9d8f4dd87fae984030ea091 [0ms]
+2025-05-20 07:37:33.911 [info] > git show --textconv :app/main.go [1ms]
+2025-05-20 07:37:37.318 [info] > git config --get commit.template [8ms]
+2025-05-20 07:37:37.318 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [0ms]
+2025-05-20 07:37:37.318 [warning] [Git][getBranch] No such branch: main
+2025-05-20 07:37:37.333 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [1ms]
+2025-05-20 07:37:37.340 [info] > git status -z -uall [14ms]
+2025-05-20 07:37:38.594 [info] > git config --get commit.template [10ms]
+2025-05-20 07:37:38.595 [info] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/master refs/remotes/master [1ms]
+2025-05-20 07:37:38.602 [warning] [Git][revParse] Unable to read file: ENOENT: no such file or directory, open '/home/laborant/.fzf/.git/refs/remotes/origin/master'
+2025-05-20 07:37:38.602 [info] > git rev-parse refs/remotes/origin/master [0ms]
+2025-05-20 07:37:38.614 [info] > git status -z -uall [4ms]
+2025-05-20 07:37:38.614 [info] > git for-each-ref --sort -committerdate --format %(refname)%00%(objectname)%00%(*objectname) [0ms]
+2025-05-20 07:37:38.755 [info] > git ls-files --stage -- app/main.go [1ms]
+2025-05-20 07:37:38.765 [info] > git cat-file -s 06f866738fcbbf04f9d8f4dd87fae984030ea091 [1ms]
+2025-05-20 07:37:38.878 [info] > git show --textconv :app/main.go [1ms]
