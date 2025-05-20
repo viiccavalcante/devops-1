@@ -1,3 +1,0 @@
-2025-05-20 07:33:39.582 [info] Log level: Info
-2025-05-20 07:33:40.054 [warning] [GitHubBranchProtectionProvider][updateRepositoryBranchProtection] Failed to update repository branch protection: No GitHub authentication session available.
-2025-05-20 07:36:36.103 [warning] [GitHubSourceControlHistoryItemDetailsProvider][_loadAssignableUsers] Failed to load assignable user(s) for junegunn/fzf: Error: No GitHub authentication session available.
