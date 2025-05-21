@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh "go test /app/..."
+                sh "go test ./..."
             }
         }
         stage('Build') {
