@@ -16,5 +16,19 @@ pipeline {
                 sh "go build main.go"
             }
         }
+
+        stage('Deploy') {
+            steps {
+                withCredentials([sshUserPrivateKey(
+                    credentialsId:'target-ssh-key',
+                    keyFileVariable:'ssh_key',
+                    usernameVariable: 'ssh_user')]){
+                sh """
+                    scp main ${ssh_user}target: -i ${ssh_key} -o StrictHostKeyChecking=no
+                    """
+                    }
+                    
+            }
+        }
     }
 }
