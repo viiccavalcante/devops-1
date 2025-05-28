@@ -27,7 +27,7 @@ pipeline {
             steps {
                 sshagent(['pk-test']) {
                     sh '''
-                        ssh -o StrictHostKeyChecking=no laborant@docker pull ttl.sh/myapp:2h && docker run -d --name myapp -p 4444:4444 ttl.sh/myapp:2h'
+                        ssh -o StrictHostKeyChecking=no laborant@docker 'docker pull ttl.sh/myapp:2h && docker run -d --name myapp -p 4444:4444 ttl.sh/myapp:2h'
                     '''
                 }   
             }
