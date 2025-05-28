@@ -16,12 +16,19 @@ pipeline {
                 sh "go build main.go"
             }
         }
+         stage('Docker Build') {
+            steps {
+                sh "docker build . --tag ttl.sh/myapp:2h"
+                sh "docker push ttl.sh/myapp:2h"
+            }
+        }
 
-        stage('Deploy') {
+        stage('Docker Deploy') {
             steps {
                 sshagent(['pk-test']) {
-                sh 'scp -o StrictHostKeyChecking=no main laborant@target:~'
-                sh 'ssh -o StrictHostKeyChecking=no laborant@target "chmod +x ~/main && sudo systemctl daemon-reload && sudo systemctl restart main.service"'
+                    sh '''
+                        ssh -o StrictHostKeyChecking=no docker@target 'docker pull ttl.sh/myapp:2h && docker run -d --name myapp -p 4444:4444 ttl.sh/myapp:2h'
+                    '''
                 }   
             }
         }
