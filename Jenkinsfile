@@ -22,14 +22,11 @@ pipeline {
                 sh "docker push ttl.sh/myapp:2h"
             }
         }
-
-        stage('Docker Deploy') {
+        stage('Deploy to Kubernetes') {
             steps {
-                sshagent(['pk-test']) {
-                    sh '''
-                        ssh -o StrictHostKeyChecking=no laborant@docker 'docker pull ttl.sh/myapp:2h && docker run -d --name myapp -p 4444:4444 ttl.sh/myapp:2h'
-                    '''
-                }   
+                withKubeConfig([credentialsId: 'kubernetes-token', serverUrl: 'https://k8s:6443']) {
+                    sh "kubectl apply -f myapp.yaml"
+                }
             }
         }
     }
